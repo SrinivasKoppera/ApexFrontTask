@@ -1,0 +1,62 @@
+.add-pokemon-to-user {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-pokemon-to-user h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.add-pokemon-to-user form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-pokemon-to-user form div {
+  margin-bottom: 20px;
+}
+
+.add-pokemon-to-user label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-pokemon-to-user select,
+.add-pokemon-to-user input[type="number"],
+.add-pokemon-to-user input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.add-pokemon-to-user input[type="number"] {
+  appearance: textfield;
+}
+
+.add-pokemon-to-user button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-pokemon-to-user button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.add-pokemon-to-user .delete-btn:hover {
+  background-color: #ff3860;
+}

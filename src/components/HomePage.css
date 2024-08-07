@@ -1,0 +1,115 @@
+.home-page {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5; 
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home-page h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.home-page h2 {
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.home-page select {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-page select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+
+.pokemon-owner-stats {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.pokemon-owner-stats h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pokemon-owner-stats table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.pokemon-owner-stats th, .pokemon-owner-stats td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.pokemon-owner-stats th {
+  background-color: #f4f7f9;
+}
+
+.pokemon-owner-stats tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.home-page button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-page button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.home-page button:active {
+  background-color: #388e3c;
+  transform: translateY(0);
+}
+
+.delete-button {
+  background-color: #f44336; 
+}
+
+.delete-button:hover {
+  background-color: #e53935; 
+}
+
+.delete-button:active {
+  background-color: #c62828; 
+}
