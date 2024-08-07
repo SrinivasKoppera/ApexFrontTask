@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:5000' // Adjust this to your backend server's address and port
+      '/api': 'https://apexbackendtask.onrender.com' // Adjust this to your backend server's address and port
     }
   }
 })
