@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import PokemonOwnerStats from './PokemonOwnerStats';
+import { API } from './api';
 import './HomePage.css';
 
 function HomePage() {
@@ -13,7 +14,7 @@ function HomePage() {
     const fetchOwners = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('/api/pokemon-owners');
+        const response = await axios.get(`${API}/api/pokemon-owners`);
         setOwners(response.data);
         setLoading(false);
       } catch (err) {

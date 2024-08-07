@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API } from './api';
 
 function PokemonOwnerList() {
   const [owners, setOwners] = useState([]);
@@ -7,7 +8,7 @@ function PokemonOwnerList() {
   useEffect(() => {
     const fetchOwners = async () => {
       try {
-        const response = await axios.get('/api/pokemon-owners');
+        const response = await axios.get(`${API}/api/pokemon-owners`);
         setOwners(response.data);
       } catch (error) {
         console.error('Error fetching pokemon owners:', error);

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API } from './api';
 
 function PokemonStats({ pokemonId }) {
   const [stats, setStats] = useState(null);
@@ -10,7 +11,7 @@ function PokemonStats({ pokemonId }) {
     const fetchPokemonStats = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`/api/pokemon/${pokemonId}/stats`);
+        const response = await axios.get(`${API}/api/pokemon/${pokemonId}/stats`);
         setStats(response.data);
         setLoading(false);
       } catch (err) {

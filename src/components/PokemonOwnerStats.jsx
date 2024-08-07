@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API } from './api';
 
 function PokemonOwnerStats({ ownerId }) {
   const [stats, setStats] = useState(null);
@@ -10,7 +11,7 @@ function PokemonOwnerStats({ ownerId }) {
     const fetchOwnerStats = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`/api/pokemon/${ownerId}`);
+        const response = await axios.get(`${API}/api/pokemon/${ownerId}`);
         setStats(response.data);
         setLoading(false);
       } catch (err) {
